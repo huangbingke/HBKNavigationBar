@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HBKNavigationViewController.h"
+#import "HBKViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    HBKViewController *hbkVC = [[HBKViewController alloc] init];
+    HBKNavigationViewController *navVC = [[HBKNavigationViewController alloc] initWithRootViewController:hbkVC];
+    self.window.rootViewController = navVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

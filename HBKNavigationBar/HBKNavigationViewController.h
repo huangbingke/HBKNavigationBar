@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HBKNavigationViewController.h
 //  HBKNavigationBar
 //
 //  Created by 黄冰珂 on 2017/10/31.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HBKNavigationViewController : UINavigationController
 
 @end
-

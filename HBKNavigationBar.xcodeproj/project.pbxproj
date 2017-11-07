@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0F5B03011FA87A7B009783B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03001FA87A7B009783B8 /* AppDelegate.m */; };
-		0F5B03041FA87A7B009783B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03031FA87A7B009783B8 /* ViewController.m */; };
 		0F5B03071FA87A7B009783B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5B03051FA87A7B009783B8 /* Main.storyboard */; };
 		0F5B03091FA87A7B009783B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5B03081FA87A7B009783B8 /* Assets.xcassets */; };
 		0F5B030C1FA87A7B009783B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5B030A1FA87A7B009783B8 /* LaunchScreen.storyboard */; };
 		0F5B030F1FA87A7B009783B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B030E1FA87A7B009783B8 /* main.m */; };
 		0F5B03191FA87A7B009783B8 /* HBKNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03181FA87A7B009783B8 /* HBKNavigationBarTests.m */; };
 		0F5B03241FA87A7B009783B8 /* HBKNavigationBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03231FA87A7B009783B8 /* HBKNavigationBarUITests.m */; };
+		0F5B03331FA87AAA009783B8 /* HBKNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03321FA87AAA009783B8 /* HBKNavigationViewController.m */; };
+		0F5B03361FA87CBC009783B8 /* HBKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03351FA87CBC009783B8 /* HBKViewController.m */; };
+		0F5B03391FA87D6C009783B8 /* HBK_NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03381FA87D6B009783B8 /* HBK_NavigationBar.m */; };
+		0F5B033C1FA87DAD009783B8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B033A1FA87DAC009783B8 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		0F5B02FC1FA87A7B009783B8 /* HBKNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBKNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5B02FF1FA87A7B009783B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F5B03001FA87A7B009783B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F5B03021FA87A7B009783B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F5B03031FA87A7B009783B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F5B03061FA87A7B009783B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F5B03081FA87A7B009783B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5B030B1FA87A7B009783B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,14 @@
 		0F5B031F1FA87A7B009783B8 /* HBKNavigationBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBKNavigationBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5B03231FA87A7B009783B8 /* HBKNavigationBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBKNavigationBarUITests.m; sourceTree = "<group>"; };
 		0F5B03251FA87A7B009783B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F5B03311FA87AAA009783B8 /* HBKNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBKNavigationViewController.h; sourceTree = "<group>"; };
+		0F5B03321FA87AAA009783B8 /* HBKNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBKNavigationViewController.m; sourceTree = "<group>"; };
+		0F5B03341FA87CBC009783B8 /* HBKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBKViewController.h; sourceTree = "<group>"; };
+		0F5B03351FA87CBC009783B8 /* HBKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBKViewController.m; sourceTree = "<group>"; };
+		0F5B03371FA87D6B009783B8 /* HBK_NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBK_NavigationBar.h; sourceTree = "<group>"; };
+		0F5B03381FA87D6B009783B8 /* HBK_NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBK_NavigationBar.m; sourceTree = "<group>"; };
+		0F5B033A1FA87DAC009783B8 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		0F5B033B1FA87DAC009783B8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +112,14 @@
 			children = (
 				0F5B02FF1FA87A7B009783B8 /* AppDelegate.h */,
 				0F5B03001FA87A7B009783B8 /* AppDelegate.m */,
-				0F5B03021FA87A7B009783B8 /* ViewController.h */,
-				0F5B03031FA87A7B009783B8 /* ViewController.m */,
+				0F5B03341FA87CBC009783B8 /* HBKViewController.h */,
+				0F5B03351FA87CBC009783B8 /* HBKViewController.m */,
+				0F5B03311FA87AAA009783B8 /* HBKNavigationViewController.h */,
+				0F5B03321FA87AAA009783B8 /* HBKNavigationViewController.m */,
+				0F5B03371FA87D6B009783B8 /* HBK_NavigationBar.h */,
+				0F5B03381FA87D6B009783B8 /* HBK_NavigationBar.m */,
+				0F5B033B1FA87DAC009783B8 /* UIView+Extension.h */,
+				0F5B033A1FA87DAC009783B8 /* UIView+Extension.m */,
 				0F5B03051FA87A7B009783B8 /* Main.storyboard */,
 				0F5B03081FA87A7B009783B8 /* Assets.xcassets */,
 				0F5B030A1FA87A7B009783B8 /* LaunchScreen.storyboard */,
@@ -265,7 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5B03041FA87A7B009783B8 /* ViewController.m in Sources */,
+				0F5B033C1FA87DAD009783B8 /* UIView+Extension.m in Sources */,
+				0F5B03361FA87CBC009783B8 /* HBKViewController.m in Sources */,
+				0F5B03331FA87AAA009783B8 /* HBKNavigationViewController.m in Sources */,
+				0F5B03391FA87D6C009783B8 /* HBK_NavigationBar.m in Sources */,
 				0F5B030F1FA87A7B009783B8 /* main.m in Sources */,
 				0F5B03011FA87A7B009783B8 /* AppDelegate.m in Sources */,
 			);
@@ -433,10 +451,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7FLGD52CU;
 				INFOPLIST_FILE = HBKNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbk.www.HBKNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,10 +466,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7FLGD52CU;
 				INFOPLIST_FILE = HBKNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hbk.www.HBKNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
