@@ -14,8 +14,6 @@
 /// 返回按钮图片
 static NSString * BackButtonImageName = @"Back_Button";
 
-
-
 //屏幕的宽度
 #define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
 //屏幕的高度
@@ -465,7 +463,7 @@ static NSString * BackButtonImageName = @"Back_Button";
 
 
 
-//-------------------------------- 动态向类中添加方法 ---------------------
+//-------------------------------- 动态向类中添加方法 -----------------------------
 #import "HBK_NavigationBar.h"
 static const char NavgationBarkey = '\0';
 @implementation UIViewController (NavigatiionBar)

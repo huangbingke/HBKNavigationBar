@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^ClickBlock)();
+typedef void(^ClickBlock)(void);
 
 @interface HBK_NavigationBar : UIView
 

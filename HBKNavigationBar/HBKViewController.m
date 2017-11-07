@@ -8,6 +8,8 @@
 
 #import "HBKViewController.h"
 
+#import "HBK_NavigationBar.h"
+
 @interface HBKViewController ()
 
 @end
@@ -19,6 +21,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
     
+    
+    self.hbk_navgationBar = [HBK_NavigationBar HBK_setupNavigationBarWithTitle:@"啦啦啦" backAction:^{
+        
+    }];
     
 }
 
