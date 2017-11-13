@@ -22,9 +22,7 @@
     self.view.backgroundColor = [UIColor greenColor];
     
     
-    self.hbk_navgationBar = [HBK_NavigationBar HBK_setupNavigationBarWithTitle:@"啦啦啦" backAction:^{
-        
-    }];
+    self.hbk_navgationBar = [HBK_NavigationBar HBK_setupNavigationBarWithTitle:@"啦啦"];
     
 }
 

@@ -12,7 +12,7 @@
 
 
 /// 返回按钮图片
-static NSString * BackButtonImageName = @"Back_Button";
+static NSString * BackButtonImageName = @"返回";
 
 //屏幕的宽度
 #define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
