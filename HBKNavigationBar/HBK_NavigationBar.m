@@ -50,18 +50,21 @@ static NSString * BackButtonImageName = @"Back_Button";
  设置标题文字
  */
 - (void)setTitle:(NSString *)title {
+    _title = title;
     self.titleLabel.text = title;
 }
 /*
  标题文字颜色
  */
 - (void)setTitleColor:(UIColor *)titleColor {
+    _titleColor = titleColor;
     self.titleLabel.textColor = titleColor;
 }
 /*
  导航栏背景颜色
  */
 - (void)setBgColor:(UIColor *)bgColor {
+    _bgColor = bgColor;
     self.backgroundColor = bgColor;
 }
 
@@ -70,6 +73,7 @@ static NSString * BackButtonImageName = @"Back_Button";
  标题字体大小
  */
 - (void)setFont:(UIFont *)font {
+    _font = font;
     self.titleLabel.font = font;
 }
 
@@ -77,10 +81,17 @@ static NSString * BackButtonImageName = @"Back_Button";
 设置背景图
  */
 - (void)setBackgroundImage:(UIImage *)backgroundImage {
+    _backgroundImage = backgroundImage;
     self.bgImageView.image = backgroundImage;
 }
 
-
+/**
+ 进度条颜色
+ */
+- (void)setProgressLineColor:(UIColor *)progressLineColor {
+    _progressLineColor = progressLineColor;
+    self.progressLineView.backgroundColor = progressLineColor;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -113,9 +124,15 @@ static NSString * BackButtonImageName = @"Back_Button";
         
         UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.maxY-44, kScreenWidth, 44)];
         [self addSubview:bottomView];
+        
+        self.progressLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 42, 0, 2)];
+        self.progressLineView.backgroundColor = [UIColor redColor];
+        [bottomView addSubview:self.progressLineView];
+        
         //如果标题存在, 创建label
         if (title) {
-            self.titleLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, kScreenWidth, 44))];
+            self.titleLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, kScreenWidth, 43))];//WithFrame:(CGRectMake(0, 0, kScreenWidth, 43))
+//            self.titleLabel.center = bottomView.center;
             self.titleLabel.textAlignment = NSTextAlignmentCenter;
             self.titleLabel.font = [UIFont systemFontOfSize:18];
             self.titleLabel.text = title;
@@ -423,6 +440,35 @@ static NSString * BackButtonImageName = @"Back_Button";
                    rightThirdBtnAction:rightThirdBtnAction];
 }
 
+
+
+/**
+ 进度条开始动画
+ */
+- (void)startLoadingAnimation {
+    self.progressLineView.hidden = NO;
+    self.progressLineView.width = 0.0;
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        self.progressLineView.width = kScreenWidth * 0.6;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.4 animations:^{
+            self.progressLineView.width = kScreenWidth * 0.8;
+        }];
+    }];
+}
+
+
+/**
+ 进度条结束动画
+ */
+- (void)endLoadingAnimation {
+    [UIView animateWithDuration:0.2 animations:^{
+        self.progressLineView.width = kScreenWidth;
+    } completion:^(BOOL finished) {
+        self.progressLineView.hidden = YES;
+    }];
+}
 
 
 #pragma mark ------------  Action ------------------

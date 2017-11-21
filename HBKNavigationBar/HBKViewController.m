@@ -9,7 +9,7 @@
 #import "HBKViewController.h"
 
 #import "HBK_NavigationBar.h"
-
+#import "SecondViewController.h"
 @interface HBKViewController ()
 
 @end
@@ -22,10 +22,10 @@
     self.view.backgroundColor = [UIColor greenColor];
     
     
-    self.hbk_navgationBar = [HBK_NavigationBar HBK_setupNavigationBarWithTitle:@"啦啦啦" backAction:^{
-        
+    self.hbk_navgationBar = [HBK_NavigationBar HBK_setupNavigationBarWithTitle:@"啦啦啦" rightFirst:@"跳" rightFirstBtnAction:^{
+        SecondViewController *secondVC = [[SecondViewController alloc] init];
+        [self.navigationController pushViewController:secondVC animated:YES];
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {

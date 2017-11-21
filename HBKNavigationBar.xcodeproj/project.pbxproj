@@ -18,6 +18,7 @@
 		0F5B03361FA87CBC009783B8 /* HBKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03351FA87CBC009783B8 /* HBKViewController.m */; };
 		0F5B03391FA87D6C009783B8 /* HBK_NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B03381FA87D6B009783B8 /* HBK_NavigationBar.m */; };
 		0F5B033C1FA87DAD009783B8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B033A1FA87DAC009783B8 /* UIView+Extension.m */; };
+		0FD4691C1FC402A4000F06AE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4691B1FC402A4000F06AE /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		0F5B03381FA87D6B009783B8 /* HBK_NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBK_NavigationBar.m; sourceTree = "<group>"; };
 		0F5B033A1FA87DAC009783B8 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		0F5B033B1FA87DAC009783B8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		0FD4691A1FC402A4000F06AE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0FD4691B1FC402A4000F06AE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 			children = (
 				0F5B02FF1FA87A7B009783B8 /* AppDelegate.h */,
 				0F5B03001FA87A7B009783B8 /* AppDelegate.m */,
+				0FD4691A1FC402A4000F06AE /* SecondViewController.h */,
+				0FD4691B1FC402A4000F06AE /* SecondViewController.m */,
 				0F5B03341FA87CBC009783B8 /* HBKViewController.h */,
 				0F5B03351FA87CBC009783B8 /* HBKViewController.m */,
 				0F5B03311FA87AAA009783B8 /* HBKNavigationViewController.h */,
@@ -283,6 +288,7 @@
 				0F5B033C1FA87DAD009783B8 /* UIView+Extension.m in Sources */,
 				0F5B03361FA87CBC009783B8 /* HBKViewController.m in Sources */,
 				0F5B03331FA87AAA009783B8 /* HBKNavigationViewController.m in Sources */,
+				0FD4691C1FC402A4000F06AE /* SecondViewController.m in Sources */,
 				0F5B03391FA87D6C009783B8 /* HBK_NavigationBar.m in Sources */,
 				0F5B030F1FA87A7B009783B8 /* main.m in Sources */,
 				0F5B03011FA87A7B009783B8 /* AppDelegate.m in Sources */,

@@ -75,6 +75,16 @@ typedef void(^ClickBlock)(void);
 @property (nonatomic, strong) CALayer * deviderLayer;
 
 
+/**
+ 进度条-----如果页面是加载网页, 可以用进度条, 展示加载进度
+ */
+@property (nonatomic, strong) UIView *progressLineView;
+
+/**
+ 进度条颜色
+ */
+@property (nonatomic, strong) UIColor *progressLineColor;
+
 
 /**
  只有标题的navigationBar
@@ -260,6 +270,11 @@ typedef void(^ClickBlock)(void);
                                      rightThird:(NSString *)rightThird
                             rightThirdBtnAction:(ClickBlock)rightThirdBtnAction;
 
+
+
+
+- (void)startLoadingAnimation;
+- (void)endLoadingAnimation;
 
 @end
 
